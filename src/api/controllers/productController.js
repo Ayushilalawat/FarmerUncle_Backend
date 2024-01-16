@@ -89,25 +89,6 @@ exports.updateProductById = async (req, res) => {
   }
 };
 
-// Controller to delete a product by ID
-// exports.deleteProductById = async (req, res) => {
-//   const productId = req.params.id;
-
-//   try {
-//     const deletedProduct = await ProductModel.findByIdAndDelete(productId);
-
-//     if (!deletedProduct) {
-//       return res.status(404).send('Product not found');
-//     }
-
-//     res.status(200).json(deletedProduct);
-//   } catch (error) {
-//     console.error('Error deleting product by ID:', error);
-//     res.status(500).send('Internal Server Error');
-//   }
-// };
-
-
 exports.delete = async (req, res) => {
   try {
     const productId = req.params.id;
